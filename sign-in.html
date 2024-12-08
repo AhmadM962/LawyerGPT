@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign In - Lawyer GPT</title>
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Lawyer GPT</a>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+        <li class="nav-item"><a class="nav-link active" href="sign-in.html">Sign In</a></li>
+        <li class="nav-item"><a class="nav-link" href="sign-up.html">Sign Up</a></li>
+      </ul>
+    </div>
+  </nav>
+ 
+  <div class="container mt-5">
+    <h2 class="text-center">Sign In to Your Account</h2>
+    <form id="signInForm" class="mt-4" action="/LawyerGPT_V1/backend/sign-in.php" method="POST">
+
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" class="form-control" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" class="form-control" id="password" name="password" required>
+      </div>
+      <button type="submit" class="btn btn-primary btn-block">Sign In</button>
+    </form>
+    <p class="text-center mt-3">
+      Don't have an account? <a href="sign-up.html">Sign Up</a>
+    </p>
+  </div>
+
+  <footer class="footer bg-dark text-white text-center py-3">
+    <p>&copy; 2024 Lawyer GPT. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
